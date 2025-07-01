@@ -6,7 +6,7 @@ import Report from './icons/Report'
 import LibrosTabla from './LibrosTabla'
 import UltimosLibros from './UltimosRegistros'
 import book from '/public/Book.png'
-
+import Cargar from './Cargando';
 
 export default function Dasboard(){
     return(
@@ -41,10 +41,11 @@ export default function Dasboard(){
                         </div>
 
                         <div className="flex flex-col justify-center items-center w-[200px]">
-
-                            <figure className="bg-[#F0E4D1] rounded-full w-16 h-16 p-3 text-[#5B4A2E]">
-                                {<Inventary className="w-full h-full"/>}
-                            </figure>
+                            <Link to="/Libros">
+                                <figure className="bg-[#F0E4D1] rounded-full w-16 h-16 p-3 text-[#5B4A2E]">
+                                    {<Inventary className="w-full h-full"/>}
+                                </figure>
+                            </Link>
                             <p className="text-[#5B4A2E] text-center">Controla el Stock en tiempo real</p>
                         </div>
 
@@ -53,7 +54,7 @@ export default function Dasboard(){
 
                             <figure className="bg-[#F0E4D1] rounded-full w-fit p-3 text-[#5B4A2E]">
                                 <Link to="/reportes">
-                                    {<Report className="w-full h-full"/>}
+                                    {<Report className="w-10 h-10"/>}
                                 </Link>
                             </figure>
                             <p className="text-[#5B4A2E] text-center">Generar reportes de inventario</p>
@@ -68,7 +69,8 @@ export default function Dasboard(){
                 <UltimosLibros/>
                 </div>
 
-                
+
+
 
 
 
