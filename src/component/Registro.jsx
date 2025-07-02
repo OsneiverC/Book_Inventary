@@ -24,6 +24,7 @@ export default function Registro() {
     });
   };
   const [exito, setExito] = useState(false);
+  
   const [cargando, setCargando] = useState(false);
   const handleSubmit = async (e) => {
     e.preventDefault();

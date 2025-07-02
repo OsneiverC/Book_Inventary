@@ -21,7 +21,7 @@ export default function UltimosLibros() {
   }, []);
 
   return (
-    <div className="p-6 rounded-lg ">
+    <div className="rounded-lg ">
       {/* <h3 className="text-2xl font-bold text-[#5B4A2E] mb-4">Últimos libros registrados</h3> */}
       <table className="w-full bg-[#F0E4D1] text-[#5B4A2E] rounded overflow-hidden">
         <thead className="bg-[#C19D5E] text-white">
