@@ -25,8 +25,9 @@ export default function Dasboard() {
             <div className="flex flex-col sm:flex-row gap-4 justify-center md:justify-start">
               <Link
                 to="/Libros"
-                className="flex items-center justify-center bg-[#C19D5E] text-white p-2 rounded-xl"
+                className="flex items-center gap-2 justify-center bg-[#C19D5E] text-white p-2 rounded-xl w-fit"
               >
+                <Inventary className="mr-2"/>
                 Ver Inventario
               </Link>
               <Link
@@ -51,7 +52,7 @@ export default function Dasboard() {
             <div className="flex flex-col sm:flex-row gap-8 justify-center">
               {/* Icono 1 */}
               <div className="flex flex-col justify-center items-center w-full sm:w-[200px]">
-                <figure className="bg-[#F0E4D1] rounded-full p-4 mb-2">
+                <figure className="bg-white rounded-full p-4 mb-2">
                   <Bookmark />
                 </figure>
                 <p className="text-[#5B4A2E] text-center text-sm">Organiza tus libros fácilmente</p>
@@ -60,7 +61,7 @@ export default function Dasboard() {
               {/* Icono 2 */}
               <div className="flex flex-col justify-center items-center w-full sm:w-[200px]">
                 <Link to="/Libros">
-                  <figure className="bg-[#F0E4D1] rounded-full w-16 h-16 flex items-center justify-center mb-2 text-[#5B4A2E]">
+                  <figure className="bg-white rounded-full w-16 h-16 flex items-center justify-center mb-2 text-[#5B4A2E]">
                     <Inventary className="w-8 h-8" />
                   </figure>
                 </Link>
@@ -70,7 +71,7 @@ export default function Dasboard() {
               {/* Icono 3 */}
               <div className="flex flex-col justify-center items-center w-full sm:w-[200px]">
                 <Link to="/reportes">
-                  <figure className="bg-[#F0E4D1] rounded-full w-fit p-4 mb-2 text-[#5B4A2E]">
+                  <figure className="bg-white rounded-full w-fit p-4 mb-2 text-[#5B4A2E]">
                     <Report className="w-8 h-8" />
                   </figure>
                 </Link>
