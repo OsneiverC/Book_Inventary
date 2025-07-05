@@ -70,8 +70,17 @@ export default function ReporteInventario() {
         <Menu />
       </div>
 
+          
       {/* Contenido principal */}
+      
       <div className="lg:ml-64 p-6 min-h-screen transition-all duration-300 bg-[#FAF9F6]">
+        <div className="breadcrumbs text-sm">
+  <ul>
+    <li><a>Home</a></li>
+    <li><a>Gestión</a></li>
+    <li>Reportes</li>
+  </ul>
+</div>
         <div className="rounded-xl p-4 md:p-8 shadow-xl bg-white">
           <h2 className="text-3xl md:text-4xl font-serif text-[#5B4A2E] mb-6">
             📊 Reporte General del Inventario

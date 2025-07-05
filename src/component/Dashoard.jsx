@@ -10,12 +10,15 @@ import book from '/public/Book.png';
 export default function Dasboard() {
   return (
     <>
+    
       <div>
         {/* Sección principal con imagen y título */}
+        
         <div className="flex flex-col md:flex-row p-7 gap-5 items-center md:items-start">
           <figure className="w-40 md:w-60 mx-auto md:mx-0">
             <img src={book} alt="Logo libro" className="w-full" />
           </figure>
+          
 
           <div className="text-center md:text-left">
             <h2 className="text-3xl md:text-5xl text-[#5B4A2E] font-serif max-w-3xl p-5">
@@ -25,9 +28,8 @@ export default function Dasboard() {
             <div className="flex flex-col sm:flex-row gap-4 justify-center md:justify-start">
               <Link
                 to="/Libros"
-                className="flex items-center gap-2 justify-center bg-[#C19D5E] text-white p-2 rounded-xl w-fit"
+                className="flex items-center gap-2 justify-center bg-[#C19D5E] text-white p-2 rounded-xl"
               >
-                <Inventary className="mr-2"/>
                 Ver Inventario
               </Link>
               <Link
