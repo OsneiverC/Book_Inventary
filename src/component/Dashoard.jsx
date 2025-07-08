@@ -3,9 +3,9 @@ import { Link } from 'react-router-dom';
 import { Inventary } from './icons/Inventary';
 import Mas from './icons/Mas';
 import Report from './icons/Report';
-import LibrosTabla from './LibrosTabla';
 import UltimosLibros from './UltimosRegistros';
 import book from '/public/Book.png';
+import IconParametro from './icons/IconParametro';
 
 export default function Dasboard() {
   return (
@@ -29,7 +29,7 @@ export default function Dasboard() {
               <Link
                 to="/Libros"
                 className="flex items-center gap-2 justify-center bg-[#C19D5E] text-white p-2 rounded-xl"
-              >
+              > <Inventary className="w-10"/>
                 Ver Inventario
               </Link>
               <Link
@@ -54,10 +54,12 @@ export default function Dasboard() {
             <div className="flex flex-col sm:flex-row gap-8 justify-center">
               {/* Icono 1 */}
               <div className="flex flex-col justify-center items-center w-full sm:w-[200px]">
-                <figure className="bg-white rounded-full p-4 mb-2">
-                  <Bookmark />
-                </figure>
-                <p className="text-[#5B4A2E] text-center text-sm">Organiza tus libros fácilmente</p>
+                <Link to={"/gestion/parametros"}>
+                  <figure className="bg-white rounded-full p-4 mb-2">
+                    <IconParametro className="text-[#5B4A2E]" />
+                  </figure>
+                </Link>
+                <p className="text-[#5B4A2E] text-center text-sm">Agrega Nuevos Parametros</p>
               </div>
 
               {/* Icono 2 */}

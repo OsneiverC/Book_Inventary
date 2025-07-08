@@ -3,6 +3,7 @@ import Mas from './icons/Mas'
 import { Inventary } from './icons/Inventary'
 import Logo from '../../public/Logo.png'
 import Report from './icons/Report';
+import IconParametro from './icons/IconParametro';
 
 
 export const Menu = () => {
@@ -18,7 +19,7 @@ export const Menu = () => {
                 <Link to="/Registro" className="flex align-center m-5 justify-center bg-[#5B4A2E] text-white p-2 rounded"> <Mas/> Agregar Nuevo Libros</Link>
                 <Link  to="/Libros" className="flex gap-2.5 p-2 items-center text-xl hover:bg-[#F0E4D1]"> <Inventary className="w-6 h-6"/> Control de stock</Link>
                 <Link  to="/reportes" className="flex gap-2.5 p-2 items-center text-xl hover:bg-[#F0E4D1]"> <Report className="w-6 h-6"/> Reportes</Link>
-                <Link to="/gestion/parametros" className="block px-4 py-2 hover:bg-[#E7DCC7] text-[#5B4A2E]"> ⚙️ Parámetros del Sistema </Link>
+                <Link to="/gestion/parametros" className="flex gap-2.5 p-2 items-center text-xl hover:bg-[#F0E4D1]"> <IconParametro/> Parámetros</Link>
             </div>
 
             </div>
